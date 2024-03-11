@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;900&display=swap');
+  
+  * {
+    font-family: "Poppins", sans-serif;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    color:white;
+  }
+  .scroll-container > section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1f1f;
+    min-height: 100vh;
+    scroll-snap-align: center;
+
+  }
+  .scroll-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh; /* Adjust height as needed */
+  }
+  h3  {
+    color:white
+  }  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  /* about me intro */
+  .about-me {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+  .about-me-text {
+    max-width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    height: 100%; 
+    margin-right: 50px;
+  }
+  .about-me-text h1 {
+    font-size: 4rem;
+    margin: 0;
+    font-weight: bolder;
+    padding: 0;
+    text-shadow: 3px 3px 0px darkgrey;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .about-me-text h6 {
+    margin: 0;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .about-me p {
+    margin: 0px;
+  }
+  .about-me img {
+    width: 550px;
+    border-radius: 5px;
+  }
+  /* soundboard */
+  #soundboard {
+    text-align: center;
+  }
+  #soundboard h3{
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .reaction-btn {
+    font-size: 35px;
+    margin-right: 10px;
+    text-align:center;
+  }
+  .reaction-btn:hover{
+    cursor: pointer;
+  }
+  /* main content */
+  .content h1 {
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 900; 
+    margin-bottom: 5px;  
+    text-shadow: 3px 3px 0px darkgrey;  
+  }
+  .content p {
+    text-align: center;
+    margin:auto;
+    max-width: 700px;
+  }
+/* Interest pics hover stuff */
+  .interest-pic {
+    width: 20vw;
+    display:inline-block;
+    margin: 20px auto;
+    position: relative;
+    cursor: pointer;
+    background-color: #28282B;
+  }
+  .center-images {
+    text-align: center;
+    margin: 20px;
+  }
+  .interest-pic img {
+    width: 100%;
+    height: auto;
+  }
+  .interest h1 {
+    font-size: 60px;  
+    font-weight: 900;
+    font-family: "Poppins", sans-serif;
+
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20vw;
+    height: 20vw;
+    display: flex;
+    background-color: rgb(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    border: 5px solid white;
+  }
+  .interest-pic-text {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+  }
+  .interest-pic:hover img {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+  }
+  .interest-pic:hover .overlay {
+    opacity: 1;
+  }
+  #interest-1 h1 {
+    text-shadow: 3px 3px 1px #ec6b20;
+  }
+  #interest-1 .gallery img:hover {
+    box-shadow: 0px 2px #ec6b20;
+  }
+  #interest-2 h1 {
+    text-shadow: 3px 3px 1px red;
+  }
+  #interest-2 .gallery img:hover {
+    box-shadow: 0px 2px red;
+  }
+  #interest-3 h1 {
+    text-shadow: 3px 3px 1px rgb(31, 161, 148);
+  }   
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap; /* Allow images to wrap to the next line */
+  justify-content: center; /* Center images horizontally */
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gallery img {
+  width: 16vw;
+  margin: 0.5vw; /* Add some margin between images */
+  display: block;
+  transition: 0.2s;
+  border-radius: 15px;
+  
+}
+.gallery img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 2px red;
+}
+.lb-caption {
+  font-weight: 400;
+  font-size: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Interest*/
+.interest h2{
+  text-align: center;
+}
+.interest h1{
+  text-align: center;
+  margin-bottom: 0px;
+  font-weight: bolder;
+}
+.interest p {
+  text-align: center;
+  max-width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+
+

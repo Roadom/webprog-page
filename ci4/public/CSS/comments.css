@@ -1,0 +1,41 @@
+.topnav {
+    visibility: hidden;
+}
+body {
+    background-color: #1f1f1f
+}
+a {
+    color: #007bff;
+}
+a:visited {
+    color: gray;
+}
+form {
+    margin-bottom: 20px;
+}
+.buttons {
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #333;
+}
+.buttons button {
+    gap:100px;
+    width: 200px;
+    color:black;
+}
+.comment-box {
+    background-color: #333;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 95vw;
+    padding: 0px 0px 20px 0px;
+}
+.comment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h3 {
+    margin-left: 20px;
+}
